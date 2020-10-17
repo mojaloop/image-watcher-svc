@@ -511,7 +511,7 @@ workflows:
             # - linting-check
             - vulnerability-check
             # - image-scan
-            - license-scan
+            # - license-scan
           filters:
             branches:
               only:
