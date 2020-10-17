@@ -99,4 +99,5 @@ curl -fsSL \
 - [ ] ci/cd setup
 - [ ] auto release setup
 - [ ] helm chart
+- [ ] integration tests in ci/cd
  
