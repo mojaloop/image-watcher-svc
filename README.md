@@ -96,3 +96,7 @@ curl -fsSL \
 - [x] business logic for `patch`
 - [ ] cleanup repo: package.json, readmes, unused files, tests
 - [ ] Look into the semantic versioning spec to make this a little more kosher and follow some pre-defined protocols
+- [ ] ci/cd setup
+- [ ] auto release setup
+- [ ] helm chart
+ 
