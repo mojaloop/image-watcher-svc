@@ -1,6 +1,6 @@
 {
   "name": "@mojaloop/image-watcher",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ml-operator image watcher - a simple service for watching and caching images found in docker hub",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
