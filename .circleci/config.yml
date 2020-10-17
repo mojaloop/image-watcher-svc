@@ -110,29 +110,6 @@ jobs:
       - store_test_results:
           path: ./test/results
 
-  test-bdd:
-    executor: default-docker
-    steps:
-      - run:
-          name: Install general dependencies
-          command: *defaults_Dependencies
-      - checkout
-      - restore_cache:
-          keys:
-            - dependency-cache-{{ checksum "package-lock.json" }}
-      - run:
-          name: Execute unit tests
-          command: npm run test:bdd
-      - run:
-          name: prepare test/results
-          command: |
-            mkdir -p test/results
-            mv junit.xml test/results
-      - store_artifacts:
-          path: ./test/results
-          prefix: test
-      - store_test_results:
-          path: ./test/results
 
   test-coverage:
     executor: default-docker
@@ -449,14 +426,6 @@ workflows:
             tags:
               only: /.*/
 
-      - test-bdd:
-          context: org-global
-          requires:
-            - setup
-          filters:
-            tags:
-              only: /.*/
-
       - test-unit:
           context: org-global
           requires:
@@ -473,17 +442,17 @@ workflows:
             tags:
               only: /.*/
 
-      - audit-licenses:
-          context: org-global
-          requires:
-            - setup
-          filters:
-            tags:
-              only: /.*/
-            branches:
-              ignore:
-                - /feature*/
-                - /bugfix*/
+      # - audit-licenses:
+      #     context: org-global
+      #     requires:
+      #       - setup
+      #     filters:
+      #       tags:
+      #         only: /.*/
+      #       branches:
+      #         ignore:
+      #           - /feature*/
+      #           - /bugfix*/
 
       # - test-integration:
       #     context: org-global
@@ -501,24 +470,24 @@ workflows:
             tags:
               only: /.*/
 
-      - linting-check:
-          context: org-global
-          requires:
-            - setup
-          filters:
-            tags:
-              only: /.*/
+      # - linting-check:
+      #     context: org-global
+      #     requires:
+      #       - setup
+      #     filters:
+      #       tags:
+      #         only: /.*/
 
-      - license-scan:
-          context: org-global
-          requires:
-            - build-local
-          filters:
-            tags:
-              only: /.*/
-            branches:
-              only:
-                - master
+      # - license-scan:
+      #     context: org-global
+      #     requires:
+      #       - build-local
+      #     filters:
+      #       tags:
+      #         only: /.*/
+      #       branches:
+      #         only:
+      #           - master
 
       # - image-scan:
       #     context: org-global
@@ -538,9 +507,8 @@ workflows:
             - test-unit
             - test-coverage
             # - test-integration
-            - test-bdd
-            - audit-licenses
-            - linting-check
+            # - audit-licenses
+            # - linting-check
             - vulnerability-check
             # - image-scan
             - license-scan
@@ -563,7 +531,7 @@ workflows:
       - publish:
           context: org-global
           requires:
-            - license-scan
+            # - license-scan
             # - image-scan
             - test-unit
             - test-coverage
