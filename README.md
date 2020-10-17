@@ -100,4 +100,7 @@ curl -fsSL \
 - [ ] auto release setup
 - [ ] helm chart
 - [ ] integration tests in ci/cd
- 
+- [ ] productionize:
+    - [ ] build ts to js
+    - [ ] reenable scans
+    
