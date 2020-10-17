@@ -1,0 +1,26 @@
+{
+  "decisions": {
+    "577|docker-hub-api>lodash": {
+      "decision": "ignore",
+      "madeAt": 1602901859488,
+      "expiresAt": 1605493845845
+    },
+    "782|docker-hub-api>lodash": {
+      "decision": "ignore",
+      "madeAt": 1602901859488,
+      "expiresAt": 1605493845845
+    },
+    "1065|docker-hub-api>lodash": {
+      "decision": "ignore",
+      "madeAt": 1602901859489,
+      "expiresAt": 1605493845845
+    },
+    "1523|docker-hub-api>lodash": {
+      "decision": "ignore",
+      "madeAt": 1602901859489,
+      "expiresAt": 1605493845845
+    }
+  },
+  "rules": {},
+  "version": 1
+}
