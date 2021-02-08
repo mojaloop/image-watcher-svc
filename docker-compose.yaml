@@ -11,6 +11,7 @@ services:
     build:
       context: ./
     command: sh -c "/opt/image-watcher/wait4/wait4.js image-watcher && npm run start"
+    # command: "npm run start"
     volumes:
       - ./docker/wait4:/opt/image-watcher/wait4
     networks:
@@ -19,8 +20,8 @@ services:
       - "4006:4006"
     depends_on:
       - redis
-    extra_hosts:
-      - "redis:172.17.0.1"
+    environment: 
+      - REDIS_HOST=redis
     healthcheck:
       test: wget -q http://172.17.0.1:4006/health -O /dev/null || exit 1
       timeout: 3s

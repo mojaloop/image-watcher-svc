@@ -174,7 +174,7 @@ async function methodMySQL (waitJob, RC) {
 async function methodNCat (waitJob) {
   const [host, port] = waitJob.uri.toString().split(':').map(x => x.trim())
   const { execSync } = require('child_process')
-  const command = `nc -z ${host} ${port}`
+  const command = `nc -z -w 3 ${host} ${port}`
   execSync(command)
   return waitJob
 }
