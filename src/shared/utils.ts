@@ -25,7 +25,7 @@ export const semanticSplit = (tag: string): { MAJOR: string, MINOR: string, BUGF
   const [MAJOR, MINOR, BUGFIX, PATCH] = tag.split('.')
 
   if (!MAJOR || !MINOR || !BUGFIX) {
-    throw new Error("Couldn't parse tag")
+    throw new Error(`Couldn't parse tag: ${tag}`)
   }
 
   return {

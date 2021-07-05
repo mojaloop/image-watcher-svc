@@ -18,7 +18,8 @@
     "mojaloop/auth-service",
     "mojaloop/transaction-requests-service",
     "mojaloop/quoting-service",
-    "mojaloop/thirdparty-api-adapter"
+    "mojaloop/thirdparty-api-adapter",
+    "ldaly/dev-portal"
   ],
   "SCRAPE_TIME_MS": 30000
 }
