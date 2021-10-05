@@ -1,4 +1,11 @@
 # Changelog: [mojaloop/ml-operator/image-watcher](https://github.com/mojaloop/ml-operator)
+### [0.1.6](https://github.com/mojaloop/ml-operator/compare/v0.1.5...v0.1.6) (2021-10-05)
+
+
+### Bug Fixes
+
+* bad npm modules ([d66737c](https://github.com/mojaloop/ml-operator/commit/d66737c4092cbcd23fbddfedec357c155411c881))
+
 ### [0.1.5](https://github.com/mojaloop/ml-operator/compare/v0.1.4...v0.1.5) (2021-10-05)
 
 
