@@ -1,4 +1,11 @@
 # Changelog: [mojaloop/ml-operator/image-watcher](https://github.com/mojaloop/ml-operator)
+### [0.1.5](https://github.com/mojaloop/ml-operator/compare/v0.1.4...v0.1.5) (2021-10-05)
+
+
+### Bug Fixes
+
+* **ci:** wrong docker image name ([2a88ed0](https://github.com/mojaloop/ml-operator/commit/2a88ed064d5bbfa9765b5dacaef80b858e1cd10c))
+
 ### [0.1.4](https://github.com/mojaloop/ml-operator/compare/v0.1.3...v0.1.4) (2021-10-05)
 
 
