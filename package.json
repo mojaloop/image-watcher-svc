@@ -59,6 +59,7 @@
     "@mojaloop/central-services-logger": "^10.6.0",
     "@mojaloop/central-services-metrics": "^9.5.0",
     "@mojaloop/central-services-shared": "^14.0.0",
+    "@mojaloop/event-sdk": "^10.7.1",
     "@mojaloop/sdk-standard-components": "^11.0.1",
     "@types/axios": "^0.14.0",
     "@types/redis": "^2.8.25",
