@@ -64,7 +64,8 @@ export class RegistryClient {
 
     let result: Array<DockerHubApiImage> = []
     while (stillPaging) {
-      const page: PaginatedResult<Array<DockerHubApiImage>> | Array<DockerHubApiImage> = await dockerHubAPI.tags(user, image, paginationOptions)
+      const page: PaginatedResult<Array<DockerHubApiImage>> | Array<DockerHubApiImage>
+        = await dockerHubAPI.tags(user, image, paginationOptions)
 
       // result wasn't paginated - just leave it for now
       // ew - the resonses from the api are pretty inconsistent

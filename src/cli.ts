@@ -121,3 +121,9 @@ program.command('start')
 
 // fetch parameters from command line and execute
 program.parseAsync(process.argv)
+
+process.on('uncaughtException', (err) =>  {
+  Logger.error(`cli - caught unhandled error: ${err.message}`)
+  Logger.error(`cli - exiting with code 1`)
+  process.exit(1)
+})
