@@ -70,7 +70,7 @@
     "convict": "^6.0.0",
     "docker-hub-api": "^0.8.0",
     "got": "^11.5.2",
-    "openapi-backend": "^3.5.1",
+    "openapi-backend": "^3.8.0",
     "path": "^0.12.7",
     "redis": "^3.1.2"
   },
