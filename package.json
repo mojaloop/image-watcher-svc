@@ -53,7 +53,7 @@
     "@hapi/hapi": "20.0.0",
     "@hapi/inert": "6.0.2",
     "@hapi/vision": "6.0.1",
-    "@mojaloop/api-snippets": "^2.0.0",
+    "@mojaloop/api-snippets": "^14.0.0",
     "@mojaloop/central-services-error-handling": "^11.3.0",
     "@mojaloop/central-services-health": "^13.0.0",
     "@mojaloop/central-services-logger": "^10.6.0",
@@ -70,7 +70,7 @@
     "convict": "^6.0.0",
     "docker-hub-api": "^0.8.0",
     "got": "^11.5.2",
-    "openapi-backend": "^3.5.1",
+    "openapi-backend": "^3.6.0",
     "path": "^0.12.7",
     "redis": "^3.1.2"
   },
